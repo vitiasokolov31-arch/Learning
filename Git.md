@@ -16,6 +16,16 @@ git config --global user.email "your@email.com"
 
 Параметр `--global` задаёт настройки для всех репозиториев текущего пользователя, если их не переопределить на уровне отдельного репозитория.
 
+Так же есть и другие параметры такие как: `--local` и `--system`
+
+Git ищет информацию в таком порядке local - global - system
+
+```
+git config --global --unset user.name
+git config --unset user.email
+```
+Команды для удаления данных
+
 ### Проверка настроек
 
 ```

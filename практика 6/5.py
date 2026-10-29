@@ -1,4 +1,4 @@
-s = [int(s[0]) for s in input().split()]
+s = [1, 3, 2, 5, 4, 6, 1]
 mx = -1
 ind = []
 numb = []

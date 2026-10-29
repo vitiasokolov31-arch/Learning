@@ -17,4 +17,4 @@ for i in range(n):
     if finding_minimum_row(cinema[i], k):
         print(f"\n{i + 1}")
         exit()
-
+#Перед матрицей ввести k

@@ -42,3 +42,6 @@ print(tuple(map(lambda num: num + 10, numbers)))
 
 nums = [-1,-2,0,-3,4]
 print(sorted(nums, key=abs))
+
+# enumerate() - возвращает индекс и значение
+# yeild - Возвращает генератор при вызове функции

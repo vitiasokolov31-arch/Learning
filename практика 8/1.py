@@ -31,5 +31,5 @@ ax.grid(True, alpha=0.3)  # Включает полупрозрачную сет
 ax.legend(loc='upper left')  # Легенда из всех label в левом верхнем углу
 
 plt.tight_layout()  # Подгоняет отступы, чтобы подписи не обрезались
-plt.savefig('weather.png')  # Сохраняет график в файл weather.png (обязательно до show)
+plt.savefig('графики/weather.png')  # Сохраняет график в файл weather.png (обязательно до show)
 plt.show()  # Отображает график в окне

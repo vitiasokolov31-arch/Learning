@@ -24,6 +24,6 @@ ax2.set_ylabel('Заряд, %')
 ax2.legend(loc='upper left')
 ax2.set_xticks(days)
 
-plt.savefig('phone.png')
+plt.savefig('графики/phone.png')
 plt.tight_layout()
 plt.show()

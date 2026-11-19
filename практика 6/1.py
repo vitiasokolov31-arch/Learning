@@ -1,2 +1,2 @@
 import random
-print(*[random.randint(1,49) for _ in range(6)])
+print(*random.sample(range(1,50) , 6) )

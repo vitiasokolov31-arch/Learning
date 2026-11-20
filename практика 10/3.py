@@ -1,10 +1,13 @@
-mx = 0
-with open("olimp.txt") as f:
+people = []
+with open("Files/olimp.txt") as f:
     for line in f:
-        for elem in line.split():
-            if elem.isdigit():
-                if int(elem) > mx:
-                    mx2 = mx
-                    mx = int(elem)
+        parts = line.split()
+        surname, name, score = parts[0], parts[1], int(parts[2])
+        people.append((surname, name, score))
 
-print(mx2)
+mx = max(p[2] for p in people)
+mx2 = max(p[2] for p in people if p[2] < mx)
+
+for surname, name, score in people:
+    if score == mx2:
+        print(surname, name, score)

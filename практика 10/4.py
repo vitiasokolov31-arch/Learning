@@ -1,14 +1,10 @@
-with open("secret.txt") as f:
+with open("Files/secret.txt") as f, \
+     open("Files/secret_anonymized.txt", "w") as out:
     for line in f:
-        for elem in line.split(","):
-            
-            #with open("secret_anonymized.txt", "a") as f1:
-                #f1.write(elem)
-
-
-
-
-#Проверка
-#with open("secret_anonymized.txt") as f:
-    #for line in f:
-        #print(line)
+        name, phone, email = line.split(", ")
+        tel, phone = phone.split(": ")
+        phone = "*" * (len(phone) - 2) + phone[-2:]
+        mail, email = email.split(": ")
+        login, domain = email.split("@")
+        email = login[0] + "***@" + domain
+        out.write(f"{name}, {tel}: {phone}, {mail}: {email}\n")

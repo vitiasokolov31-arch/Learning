@@ -2,7 +2,7 @@ import json
 servers = {}
 drop_server = []
 status = ["online", "offline", "maintenance"]
-with open("servers.json") as f:
+with open("Files/servers.json") as f:
     loaded_data = json.load(f)
     for key, value in loaded_data.items():
         if value in status:

@@ -23,3 +23,4 @@ if new_music in ['да', 'yes', 'y', 'хочу', 'можно', 'д']:
 
 with open("Files/playlist.json", "w") as f:
     json.dump(playlist_dict, f, ensure_ascii=False, indent=4)
+    print("Песня успешно добавлена")

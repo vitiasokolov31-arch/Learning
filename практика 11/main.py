@@ -11,4 +11,11 @@ if __name__ == "__main__":
     assert abs(alg.sqrt_newton(25, 1e-6) - 5.0) <= 1e-6
     assert alg.second_max([10, 20, 4, 45, 99]) == 45
     assert alg.count_primes_up_to(10) == 4
+    assert alg.reverse_number(0) == 0
+    assert alg.is_prime(1) is False
+    assert alg.is_prime(2) is True
+    assert alg.fibonacci(0) == 0
+    assert alg.max_increasing_len([]) == 0
+    assert alg.max_increasing_len([5]) == 1
+    assert alg.sqrt_newton(0, 1e-6) == 0.0
     print("Все базовые проверки пройдены успешно!")
